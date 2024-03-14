@@ -1,0 +1,19 @@
+task
+public class Main {
+    public static void main(String[] args) {
+        // Create courses
+        Course javaCourse = new Course("CS101", "Java Programming", "Introduction to Java programming", 20, "MWF 10:00-11:30");
+        Course algoCourse = new Course("CS202", "Algorithms", "Advanced algorithms and data structures", 15, "TTh 13:00-14:30");
+
+        // Create students
+        Student student1 = new Student(1, "Alice");
+        Student student2 = new Student(2, "Bob");
+
+        // Register students for courses
+        student1.registerForCourse(javaCourse);
+        student2.registerForCourse(algoCourse);
+
+        // Drop a course for a student
+        student1.dropCourse(javaCourse);
+    }
+}
